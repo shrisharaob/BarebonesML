@@ -1,4 +1,4 @@
-"""Decision Tree
+"""Decision Tree 
 
 Algorithm
 ---------
@@ -46,11 +46,13 @@ class Node(object):
 
 
 class DecisionTree(object):
-    """Documentation for DecisionTree
+    """DecisionTree(max_depth=100, min_samples=2, min_features=None)
 
     """
 
     def __init__(self, max_depth=100, min_samples=2, min_features=None):
+        """
+        """
         self.max_depth = max_depth
         self.min_samples = min_samples
         self.min_features = min_features
@@ -65,7 +67,6 @@ class DecisionTree(object):
 
     def predict(self, X):
         # row wise
-        print(X.shape)
         return np.array([self.traverse_tree(row, self.tree) for row in X])
 
     def grow_tree(self, X, y, depth=0):
