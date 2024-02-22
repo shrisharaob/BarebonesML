@@ -22,8 +22,8 @@ The repository is organized into folders, each dedicated to a specific machine l
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/ml-from-scratch-python.git
-    cd ml-from-scratch-python
+    git clone https://github.com/shrisharaob/BarebonesML.git
+    cd BarebonesML 
     ```
 
 2. Explore the algorithm folders and select the one you're interested in.
@@ -31,6 +31,17 @@ The repository is organized into folders, each dedicated to a specific machine l
 3. Open the Python script to study the implementation. Comments are included to explain each step.
 
 4. Experiment and Learn! Feel free to modify the scripts or use them as a starting point for your own implementations.
+
+## Run on Docker
+
+```bash
+docker run -v <path_to_repository>/BarebonesML:/app -t bbml_app <path_to_python_script_to_run>
+```
+
+For example to run the file `linear_regiression.py` in the `supervised` folder, run the following: 
+```bash
+docker run -v <path_to_repository>/BarebonesML:/app -t bbml_app ./supervised/linear_regression.py 
+```
 
 ## Contribution Guidelines
 
