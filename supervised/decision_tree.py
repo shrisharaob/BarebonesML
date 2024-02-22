@@ -103,7 +103,7 @@ class DecisionTree(object):
         return Node(left_node=left_node,
                     right_node=right_node,
                     feature_idx=best_feature_idx,
-                    threshold=best_feature_idx)
+                    threshold=best_threshold)
 
     def split_function(self, X_selected, threshold):
         """Returns the booleen indices of left and right split of elements in

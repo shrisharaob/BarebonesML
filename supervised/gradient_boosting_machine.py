@@ -1,6 +1,4 @@
 import numpy as np
-from sklearn.tree import DecisionTreeRegressor  # Importing DecisionTreeRegressor from scikit-learn
-
 from decision_tree import DecisionTree
 from collections import Counter
 from pathlib import Path
@@ -44,7 +42,7 @@ class GradientBoostingMachine:
 
         # Sequentially fit decision trees to the residuals
         for _ in range(self.n_estimators):
-            tree = DecisionTreeRegressor(
+            tree = DecisionTree(
                 max_depth=self.max_depth)  # Create a decision tree regressor
             tree.fit(X, self.residuals)  # Fit the tree to the residuals
             self.trees.append(tree)  # Add the trained tree to the ensemble
@@ -76,8 +74,6 @@ def main():
     y[y == -1] = 0.0
     # y[y < 0] = 2
     X_train, y_train, X_test, y_test = train_test_split(X, y)
-
-    print(np.unique(y_train))
 
     # fit
     gbm = GradientBoostingMachine(max_depth=100, n_estimators=100)
