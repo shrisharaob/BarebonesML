@@ -15,6 +15,7 @@ This repository contains Python scripts that implement machine learning algorith
 The repository is organized into folders, each dedicated to a specific machine learning algorithm. Each folder typically includes:
 
 - A Python script implementing the algorithm from scratch.
+- The details of the logic used and docs can be found [here](https://shrisharaob.github.io/tutorials/BareBonesML/index.html)
 - A README file providing an overview of the algorithm, its purpose, and usage.
 
 ## Getting Started
