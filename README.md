@@ -16,6 +16,7 @@ The repository is organized into folders, each dedicated to a specific machine l
 
 - A Python script implementing the algorithm from scratch.
 - The details of the logic used and docs can be found [here](https://shrisharaob.github.io/tutorials/BareBonesML/index.html)
+- Each folder contains a `demos.ipynb` notebook file that showcases the application of the algos on toy datasets
 
 
 ## Getting Started
