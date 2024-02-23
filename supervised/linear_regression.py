@@ -164,7 +164,7 @@ def main():
 
     # Save the figure using the specified folder
     # plt.savefig(os.path.join(figure_folder, 'output.png'))
-    plt.savefig(os.path.join('/app/figures/', 'linear_regression_fit.png'))
+    # plt.savefig(os.path.join('/app/figures/', 'linear_regression_fit.png'))
 
     try:
         plt.show()

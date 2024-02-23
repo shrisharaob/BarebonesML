@@ -70,7 +70,7 @@ class GradientBoostingMachine:
 
 
 def main():
-    X, y = generate_data(num_samples=100)
+    X, y = generate_data(num_samples=100, seed=256)
     y[y == -1] = 0.0
     # y[y < 0] = 2
     X_train, y_train, X_test, y_test = train_test_split(X, y)

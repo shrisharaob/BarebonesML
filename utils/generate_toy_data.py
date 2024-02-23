@@ -1,8 +1,8 @@
 import numpy as np
 
 
-def generate_data(num_samples=100):
-    np.random.seed(42)
+def generate_data(num_samples=100, seed=42):
+    np.random.seed(seed)
     X = np.random.randn(num_samples, 2)
     y = np.where(X[:, 0] + X[:, 1] > 0, 1, -1)
     return X, y

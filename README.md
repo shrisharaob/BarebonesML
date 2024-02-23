@@ -16,7 +16,7 @@ The repository is organized into folders, each dedicated to a specific machine l
 
 - A Python script implementing the algorithm from scratch.
 - The details of the logic used and docs can be found [here](https://shrisharaob.github.io/tutorials/BareBonesML/index.html)
-- A README file providing an overview of the algorithm, its purpose, and usage.
+
 
 ## Getting Started
 
