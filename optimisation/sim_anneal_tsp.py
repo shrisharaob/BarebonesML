@@ -102,7 +102,7 @@ class SimAnneal(object):
                 self.cost_history.append(old_cost[0][0])
 
             # draw solutions
-            if if_display and (i % 1000) == 0:
+            if if_display and (i % 100000) == 0:
                 self.display()
 
     def display(self):
@@ -128,6 +128,8 @@ class SimAnneal(object):
 
         plt.figure()
         plt.plot(self.cost_history)
+        plt.xlabel('Iteration')
+        plt.ylabel('Cost')
         plt.show()
 
 
